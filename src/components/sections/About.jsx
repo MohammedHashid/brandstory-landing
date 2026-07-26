@@ -6,7 +6,7 @@ export default function About() {
       
     >
       <div 
-        className="flex w-11/12 flex-col items-center px-4 sm:px-6 lg:flex-row lg:items-start lg:px-16"
+        className="flex w-11/12 flex-col items-center px-4 sm:px-6 lg:flex-row lg:items-center lg:px-16"
         style={{ gap: '64px' }}
       >
         

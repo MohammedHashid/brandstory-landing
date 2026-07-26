@@ -28,6 +28,23 @@ export default function TrustPartners() {
     >
       
       <style>{`
+        .trust-card {
+          transition: all 0.4s ease-in-out;
+        }
+        .trust-card:hover {
+          background: linear-gradient(180deg, #f5f0ff 0%, #ffffff 100%) !important;
+          box-shadow: 0 20px 40px rgba(134, 59, 255, 0.15);
+          transform: translateY(-4px);
+        }
+        .trust-card h3, .trust-card p {
+          transition: color 0.4s ease-in-out;
+        }
+        .trust-card:hover h3 {
+          color: #863bff !important;
+        }
+        .trust-card:hover p {
+          color: #18181b !important;
+        }
         .trust-card img {
           filter: grayscale(100%) opacity(0.8);
           transition: all 0.4s ease-in-out;
@@ -60,7 +77,7 @@ export default function TrustPartners() {
           {CARDS_DATA.map((card, index) => (
             <div 
               key={index}
-              className="trust-card flex flex-col rounded-[24px] bg-[#1a1a24] transition-colors duration-300 hover:bg-[#1f1f2a]"
+              className="trust-card flex flex-col rounded-[24px] bg-[#1a1a24] transition-all duration-400"
               style={{ padding: '40px 32px' }}
             >
               
