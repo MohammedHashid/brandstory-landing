@@ -3,7 +3,7 @@
 Welcome to my submission for the Junior Associate Web Developer assessment! This project is a pixel-perfect, fully responsive React.js landing page converted directly from the provided Figma design.
 
 ## Live Deployment
-Live URL: [Deploying to Vercel...] (Please check my Vercel link)
+Live URL: [https://brandstory-landing.vercel.app/](https://brandstory-landing.vercel.app/)
 
 ## Project Setup Instructions
 
@@ -11,7 +11,7 @@ To run this project locally, follow these steps:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/brandstory-landing.git
+   git clone https://github.com/MohammedHashid/brandstory-landing.git
    cd brandstory-landing
    ```
 
