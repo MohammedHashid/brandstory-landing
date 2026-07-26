@@ -1,0 +1,51 @@
+@import url('https://fonts.cdnfonts.com/css/hk-grotesk');
+@import "tailwindcss";
+
+@theme {
+  --color-brand-purple:       #863bff;
+  --color-brand-purple-light: #aa3bff;
+  --color-brand-purple-dim:   #5b21b6;
+  --font-sans: "HK Grotesk", sans-serif;
+  --animate-marquee: marquee 35s linear infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #09090b;
+  color: white;
+  font-family: "HK Grotesk", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Skip-to-content — visible only on keyboard focus */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 1rem;
+  z-index: 9999;
+  padding: 0.5rem 1rem;
+  background: #863bff;
+  color: white;
+  border-radius: 0.25rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+.skip-link:focus {
+  left: 1rem;
+}
