@@ -35,10 +35,12 @@ export default function Navbar() {
 
   return (
     <header 
-      className="fixed inset-x-0 top-0 z-50 flex w-full justify-center bg-transparent backdrop-blur-sm"
+      className="fixed inset-x-0 top-0 z-50 flex flex-col items-center w-full bg-transparent backdrop-blur-sm"
       style={{ paddingTop: '24px' }}
     >
-      <div className="flex h-[88px] w-full max-w-7xl items-center justify-between gap-6 px-4 sm:px-8 lg:px-16">
+      <div 
+        className="flex h-[88px] w-11/12 max-w-7xl items-center justify-between gap-6"
+      >
 
         
         <a
@@ -96,7 +98,7 @@ export default function Navbar() {
           aria-expanded={isMenuOpen}
           aria-controls="mobile-menu"
           onClick={toggleMenu}
-          className="inline-flex items-center justify-center rounded-md p-2 text-white/70 transition-colors duration-150 hover:bg-white/10 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/40 lg:hidden"
+          className="mr-2 inline-flex items-center justify-center rounded-md p-2 text-white/70 transition-colors duration-150 hover:bg-white/10 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/40 lg:hidden"
         >
           <svg
             aria-hidden="true"
@@ -116,36 +118,48 @@ export default function Navbar() {
       </div>
 
       
+      {/* Full Screen Mobile Overlay */}
       <div
         id="mobile-menu"
         role="region"
         aria-label="Mobile navigation"
-        className={[
-          "overflow-hidden border-t border-white/10 bg-[#09090b] transition-all duration-300 ease-in-out lg:hidden",
-          isMenuOpen ? "max-h-[28rem] opacity-100" : "max-h-0 opacity-0",
-        ].join(" ")}
+        className={`fixed inset-0 z-50 flex h-screen w-full flex-col bg-[#09090b]/98 backdrop-blur-2xl transition-all duration-300 ease-in-out lg:hidden ${isMenuOpen ? 'opacity-100 pointer-events-auto translate-y-0' : 'opacity-0 pointer-events-none -translate-y-8'}`}
       >
-        <nav aria-label="Mobile navigation links">
-          <ul className="flex flex-col px-4 pb-5 pt-3" role="list">
+        {/* Header area for Close Button */}
+        <div className="flex h-[88px] w-full items-center justify-end px-6 sm:px-8">
+          <button
+            type="button"
+            onClick={closeMenu}
+            className="mr-2 rounded-md p-2 text-white/70 transition-colors duration-200 hover:bg-white/10 hover:text-white focus:outline-none focus:ring-2 focus:ring-white/40"
+            aria-label="Close menu"
+          >
+            <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+
+        {/* Centered Navigation Links */}
+        <nav aria-label="Mobile navigation links" className="flex flex-1 flex-col items-center justify-center pb-20">
+          <ul className="flex flex-col items-center gap-8" role="list">
             {NAV_LINKS.map(({ label, href }) => (
               <li key={href}>
                 <a
                   href={href}
                   onClick={closeMenu}
-                  className="flex items-center justify-between py-3 text-base font-medium text-white/70 transition-colors duration-150 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/40 rounded"
+                  className="text-[28px] font-bold tracking-wide text-white/70 transition-colors duration-200 hover:text-white"
                 >
                   {label}
-                  <ChevronDown />
                 </a>
               </li>
             ))}
 
-            
-            <li className="mt-4">
+            <li className="mt-8">
               <a
                 href="#contact"
                 onClick={closeMenu}
-                className="block w-full rounded-full bg-white px-5 py-3 text-center text-sm font-bold uppercase tracking-wide text-[#863bff] transition-colors duration-150 hover:bg-gray-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
+                className="inline-block rounded-full bg-[#863bff] text-center text-[15px] font-bold uppercase tracking-widest text-white transition-transform duration-200 hover:scale-105 hover:bg-[#a66aff]"
+                style={{ padding: '16px 40px' }}
               >
                 Get Quote
               </a>

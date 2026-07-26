@@ -38,10 +38,10 @@ export default function TrustPartners() {
         }
       `}</style>
 
-      <div className="flex w-full max-w-7xl flex-col items-center px-4 sm:px-6 lg:px-16">
+      <div className="flex w-11/12 flex-col items-center px-4 sm:px-6 lg:px-16">
         
         
-        <div className="flex w-full max-w-4xl flex-col items-center text-center" style={{ marginBottom: '64px' }}>
+        <div className="flex w-11/12 flex-col items-center text-center" style={{ marginBottom: '64px' }}>
           <h2 
             className="font-bold leading-[1.2] text-white"
             style={{ fontSize: '36px', marginBottom: '24px' }}

@@ -30,7 +30,7 @@ export default function Locations() {
     >
       
       
-      <div className="flex w-full max-w-7xl flex-col items-center">
+      <div className="flex w-11/12 flex-col items-center">
         
         
         <h2 className="text-center text-[28px] font-bold text-white sm:text-[36px]" style={{ marginBottom: '64px' }}>

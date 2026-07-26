@@ -42,7 +42,7 @@ export default function Team() {
         
         
         <div 
-          className="flex w-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-16"
+          className="flex w-11/12 items-center justify-between px-4 sm:px-6 lg:px-16"
           style={{ marginBottom: '64px' }}
         >
           

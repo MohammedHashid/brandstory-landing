@@ -25,7 +25,7 @@ export default function FAQ() {
       className="relative flex w-full justify-center bg-[#09090b]"
       style={{ paddingBottom: '120px' }}
     >
-      <div className="flex w-full max-w-4xl flex-col items-center px-4 sm:px-6">
+      <div className="flex w-11/12 flex-col items-center px-4 sm:px-6">
         
         
         <h2 

@@ -29,7 +29,7 @@ export default function Hero() {
                     src="/images/hero.png"
                     alt=""
                     role="presentation"
-                    fetchpriority="high"
+                    fetchPriority="high"
                     className="h-full w-full object-cover object-center"
                 />
                 
@@ -80,13 +80,17 @@ export default function Hero() {
 
                 
                 <div className="w-full max-w-[100vw] overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_5%,black_95%,transparent)]">
-                    <div className="flex flex-nowrap animate-marquee hover:[animation-play-state:paused] motion-reduce:animate-none">
+                    <div 
+                        className="flex flex-nowrap hover:[animation-play-state:paused] motion-reduce:animate-none"
+                        style={{ animation: 'marquee 20s linear infinite' }}
+                    >
                         
                         
                         <ul
                             role="list"
                             aria-label="Brands that trust BrandStory"
-                            className="grid w-full flex-shrink-0 grid-cols-3 sm:grid-cols-4 md:grid-cols-6"
+                            className="grid w-full flex-shrink-0 grid-cols-4 sm:grid-cols-4 md:grid-cols-6"
+                            style={{ gap: '24px', minWidth: '800px' }}
                         >
                             {LOGOS.map(({ src, alt }) => (
                                 <li
@@ -106,7 +110,8 @@ export default function Hero() {
                         
                         <ul
                             aria-hidden="true"
-                            className="grid w-full flex-shrink-0 grid-cols-3 sm:grid-cols-4 md:grid-cols-6"
+                            className="grid w-full flex-shrink-0 grid-cols-4 sm:grid-cols-4 md:grid-cols-6"
+                            style={{ gap: '24px', minWidth: '800px' }}
                         >
                             {LOGOS.map(({ src, alt }) => (
                                 <li

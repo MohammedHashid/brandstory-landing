@@ -12,7 +12,7 @@ export default function Statistics() {
       className="relative flex w-full justify-center bg-[#09090b]"
       style={{ paddingBottom: '120px' }}
     >
-      <div className="flex w-full max-w-7xl flex-col items-center px-4 sm:px-6 lg:px-16">
+      <div className="flex w-11/12 flex-col items-center px-4 sm:px-6 lg:px-16">
         
         
         <div className="relative flex w-full flex-col items-center">

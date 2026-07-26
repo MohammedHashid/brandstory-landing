@@ -71,7 +71,7 @@ export default function CaseStudies() {
         
         
         <div 
-          className="relative flex w-full max-w-7xl flex-col px-4 sm:px-6 lg:px-16"
+          className="relative flex w-11/12 flex-col px-4 sm:px-6 lg:px-16"
           style={{ marginBottom: '40px' }}
         >
           <div className="flex w-full justify-center">
@@ -105,7 +105,7 @@ export default function CaseStudies() {
         </div>
 
         
-        <div className="flex w-full max-w-7xl justify-center px-4 sm:px-6 lg:px-16">
+        <div className="flex w-11/12 justify-center px-4 sm:px-6 lg:px-16">
           <div 
             ref={scrollRef}
             className="no-scrollbar flex w-full snap-x snap-mandatory overflow-x-auto"

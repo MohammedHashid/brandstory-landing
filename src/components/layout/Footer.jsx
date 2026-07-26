@@ -132,17 +132,16 @@ export default function Footer() {
       </div>
 
       
+      <div style={{ width: '100%', backgroundColor: 'white', padding: '16px 5%', display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'center' }}>
+        <img src="/images/partners.png" alt="Partner Logos" style={{ height: '40px', width: 'auto', objectFit: 'contain', maxWidth: '90%', margin: '0 auto', display: 'block' }} />
+      </div>
+
       <div className="border-t border-white/10">
         <div className="flex w-full justify-center text-center" style={{ padding: '32px 5%', margin: '0 auto' }}>
           <p className="text-[12px] text-[#71717a]">
             Copyright © Brandstory, All Rights Reserved 2025 | <a href="#" className="hover:text-white transition-colors">Terms & Conditions</a> | <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
           </p>
         </div>
-      </div>
-
-      
-      <div style={{ width: '100%', backgroundColor: 'white', padding: '16px 5%', display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'center' }}>
-        <img src="/images/partners.png" alt="Partner Logos" style={{ height: '40px', width: 'auto', objectFit: 'contain', maxWidth: '90%', margin: '0 auto', display: 'block' }} />
       </div>
 
     </footer>

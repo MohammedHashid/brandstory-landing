@@ -28,10 +28,10 @@ export default function WhyChoose() {
       className="relative flex w-full justify-center bg-[#09090b]"
       style={{ paddingTop: '120px', paddingBottom: '120px' }}
     >
-      <div className="flex w-full max-w-7xl flex-col items-center px-4 sm:px-6 lg:px-16">
+      <div className="flex w-11/12 flex-col items-center px-4 sm:px-6 lg:px-16">
         
         
-        <div className="w-full max-w-4xl text-center" style={{ marginBottom: '56px' }}>
+        <div className="w-11/12 text-center" style={{ marginBottom: '56px' }}>
           <h2 className="text-[28px] font-semibold leading-[1.3] text-white sm:text-[34px]">
             What Sets Us Apart as a Leading Digital Marketing<br className="hidden lg:block" />
             Agency in Abu Dhabi
